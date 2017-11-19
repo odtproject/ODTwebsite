@@ -1,0 +1,39 @@
+/* Items that need to be fiddled with so that the Ancestry header will look right */
+
+#RootsBanner-SearchWrapper {
+	height: 50px !important;
+	min-width: 100%;
+}
+
+/* Took this from v5.0.0 of normalize.css */
+button,input,select,textarea {
+	font-family: sans-serif; /* 1 */
+	font-size: 90%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+@media only screen and (min-width:300px) and (max-width:771px){
+#RootsSearch-Wrapper{
+	float:left;
+	position:absolute;
+	top: 40px;
+	left: 10px;
+	min-width: 520px;
+}
+
+#RootsBanner-SearchWrapper {
+	height: 150px !important;
+	min-width: 100%;
+}
+
+.SearchForm-Container{
+	float:left;
+	position:absolute;
+	margin-left:0px;
+	margin-top:-3px;
+	left:-80px;
+	top: 55px;
+	width:400px;
+	height:50px;
+}

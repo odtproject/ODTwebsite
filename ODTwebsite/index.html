@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Obituary Daily Times</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts/email.js"></script>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/odt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+<script src="scripts/odt.js"></script>
+<script src="scripts/email.js"></script>
+</head>
+
+<body>
+<!-- Site page header, first small, then medium, then large -->
+<div class="w3-hide-medium w3-hide-large">
+	<img src="logo_small.png" alt="Obituary Daily Times logo" style="width:100%">
+</div>
+<div class="w3-hide-small w3-hide-large" >	
+	<img src="banner_med.png" alt="Obituary Daily Times banner" style="width:100%">
+</div>
+<div class="w3-hide-small w3-hide-medium" >	
+	<img src="banner_lg.png" alt="Obituary Daily Times banner" style="width:100%">
+</div>
+
+<!-- navigation bar; need to include odt.js -->
+<div class="w3-bar w3-theme w3-right-align">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-theme w3-opennav w3-right" href="javascript:void(0);" onclick="flipShow()"><span class="fa fa-bars fa-2x"></span></a> 
+	<a class="w3-bar-item w3-button w3-hover-blue" href="index.html">Home</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="using_db.html">Search database</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="http://archiver.rootsweb.ancestry.com/cgi-bin/search?aop&path=GEN-OBIT">Search archives</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="http://lists.rootsweb.ancestry.com/index/other/Obituaries/GEN-OBIT.html">Email list</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="volunteer.html">Volunteer</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="publications.html">Publications</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="adoptables.html">Adoptable Publications</a>
+</div>
+	
+<div id="smNav" class="w3-hide w3-hide-large w3-hide-medium"> <!-- container for small screen navbar -->
+	<div class="w3-bar-block w3-left-align w3-large w3-theme">
+		
+		<div class="w3-bar-item w3-dropdown-hover">Search
+			<div class="w3-dropdown-content w3-white w3-card-4">
+				<a class="w3-bar-item w3-button" href="using_db.html">Database</a>
+				<a class="w3-bar-item w3-button" href="http://archiver.rootsweb.ancestry.com/cgi-bin/search?aop&path=GEN-OBIT">Archives</a>
+			</div>
+		</div>
+		<a class="w3-bar-item w3-button" href="http://lists.rootsweb.ancestry.com/index/other/Obituaries/GEN-OBIT.html">Subscribe</a>
+		<a class="w3-bar-item w3-button" href="volunteer.html">Volunteer</a>
+		<a class="w3-bar-item w3-button" href="publications.html">Publications</a>
+		<a class="w3-bar-item w3-button" href="adoptables.html">Adoptables</a>
+	</div>
+</div> <!-- end of small navbar -->
+
+<noscript>Your browser does not support JavaScript!</noscript>
+ 
+<div class="w3-row-padding w3-margin-top w3-border">
+  <div class="w3-third">
+	<div class="w3-card-2 w3-padding-top w3-padding-large" style="min-height:380px">
+      <h2 class="w3-center">How it works</h2>
+	  <p class="w3-center"><i class="fa fa-info-circle w3-margin-bottom w3-text-blue" style="font-size:60px"></i></p>
+      
+		<p>1. Volunteers contribute indexes of obituaries from their local papers.</p>
+		<p>2. Entries are put into a searchable database.</p>
+		<p>3. Entries are emailed to list subscribers.</p>
+		<p>4. Volunteers can contact contributors for an actual obituary.</p>  
+		<p> </p>
+		</div>
+	</div>
+    <div class="w3-third">
+		<div class="w3-card-2 w3-padding-top w3-padding-large" style="min-height:380px">
+		<h2 class="w3-center">How to help</h2>
+		<p class="w3-center"><i class="fa fa-hand-paper-o w3-margin-bottom w3-text-blue" style="font-size:60px"></i></p>
+		<p>If you have a computer and get a publication that has obituaries, you can help!</p>
+		<p>Just a few minutes a day and you can help other researchers find those all-important obituaries for their genealogical research.</p>
+
+		<p>For more information, visit the <a class="w3-text-theme" href="http://www.rootsweb.ancestry.com/~obituary/volunteer.html">Become a Volunteer page.</a></p>
+
+	</div>
+   </div>
+   <div class="w3-third">
+		<div class="w3-card-2 w3-padding-top w3-padding-large" style="min-height:380px">
+		<h2 class="w3-center">How to use the index</h2>
+		<p class="w3-center"><i class="fa fa-clipboard w3-margin-bottom w3-text-blue" style="font-size:60px"></i></p>
+		<p>Each entry contains basic information, such as, name, date of publication, etc.</p>
+		<p>Find the publication abbreviation in our publication list.</p>
+		
+		<p>If you are not a contributor, you will need to contact the publication, a library, or genealogical society to find the actual obituary itself.</p>
+	</div>
+   </div>
+</div>
+
+<!-- Moderator Section -->
+<div class="w3-container w3-padding-16" >
+	<h3 class="w3-padding-4">Moderator Info</h3>
+	<p>Moderators receive submissions from volunteers in the USA, Canada, and countries all around the world.</p>  
+	<p>They put all the information together and send them to the final moderator, who puts it into the database and GEN-OBIT email.</p>
+</div>
+<div class="w3-row-padding ">
+    <div class="w3-col l2 m6 w3-margin-bottom w3-topbar w3-border-left w3-border-teal">
+      <h4>Alice Ramsay</h4>
+      <p class="w3-opacity">Final Moderator</p>
+	  <p><script>mailbtn("odtfinalmod","yahoo",0,"?subject=ODT%20website","Contact Alice")</script></p>
+      <p>Webmaster, database manager, and mailing list administrator</p>      
+    </div>
+    <div class="w3-col l2 m6 w3-margin-bottom w3-topbar w3-border-left w3-border-teal">
+      <h4>Jan Plambeck</h4>
+      <p class="w3-opacity">Moderator/Trainer</p>
+	  <p><script>mailbtn("odtmoderator","gtmc",2,"","Contact Jan P")</script></p>
+	  <p>In charge of training volunteers and assigning them to a moderator</p>
+<!--       <p>AK, AL, AR, GA, IA, IL, IN, KS, MI, MS, MT, NE, OR, WA, WI, WY, England</p>      --> 
+    </div>
+    <div class="w3-col l2 m4 w3-margin-bottom w3-topbar w3-border-left w3-border-teal">
+      <h4>Jan Wheeler</h4>
+      <p class="w3-opacity">Moderator</p>
+<!-- 	  <p><script>mailbtn("odtmodjrw","gmail",0,"","Contact Jan W")</script></p> -->
+	  <p>Longtime moderator and volunteer</p>
+<!--      <p>CA, CT, DC, DE, HI, KY, MA, MD, ME, MO, NH, NJ, NY, OH, PA, RI, SC, TN, VA, VT, WV</p>     -->
+    </div>
+    <div class="w3-col l2 m4 w3-margin-bottom w3-topbar w3-border-left w3-border-teal">
+      <h4>Gary King</h4>
+      <p class="w3-opacity">Moderator</p>
+	  <p><script>mailbtn("Kingsk1117","aol",0,"","Contact Gary")</script></p>
+	  <p>Moderator, especially for entries from other countries</p>
+<!--      <p>Canada (AB, BC, NB, ON), Germany</p>      -->
+    </div>
+	<div class="w3-col l2 m4 w3-margin-bottom w3-topbar w3-border-left w3-border-teal">
+      <h4>Charla Pfeffinger</h4>
+      <p class="w3-opacity">Moderator</p>
+	  <p><script>mailbtn("charla.p","comcast",2,"","Contact Char")</script></p>
+	  <p>Dedicated moderator for a growing list of volunteers</p>
+<!--      <p>AZ, CO, FL, ID, LA, MN, NC, NM, NV, OK, SD, TN, TX, UT</p>-->
+      
+    </div>
+</div>
+
+<div class="w3-panel w3-theme-l5 w3-topbar w3-bottombar w3-border-teal">
+	<p class="w3-small">The Obituary Daily Times started in 1995 as an obituary sharing project.  
+	As time went on, we made our database and email available to the public.</p>
+	<p class="w3-small">We are grateful to all of our dedicated volunteers who have contributed to this project over the years
+	and all those who continue to contribute their time to this effort.</p>
+</div>
+<footer class="w3-container w3-theme">
+  <p class="w3-small"><b>Thank You</b> to Rootsweb for hosting our website and our mailing list since 2006.</p>
+  <p class="w3-tiny">
+<script>document.write("Last modified " + document.lastModified)</script></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/odt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+<script src="scripts/email.js"></script>
+<script src="scripts/odt.js"></script>
+
+<title>Obituary Filer Download Page</title>
+</head>
+
+<body>
+<!-- Site page header, first small, then medium, then large -->
+<div class="w3-hide-medium w3-hide-large">
+	<img src="logo_small.png" alt="Obituary Daily Times logo" style="width:100%">
+</div>
+<div class="w3-hide-small w3-hide-large" >	
+	<img src="banner_med.png" alt="Obituary Daily Times banner" style="width:100%">
+</div>
+<div class="w3-hide-small w3-hide-medium" >	
+	<img src="banner_lg.png" alt="Obituary Daily Times banner" style="width:100%">
+</div>
+
+<!-- navigation bar; need to include odt.js -->
+<div class="w3-bar w3-theme w3-right-align">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-theme w3-opennav w3-right" href="javascript:void(0);" onclick="flipShow()"><span class="fa fa-bars fa-2x"></span></a> 
+	<a class="w3-bar-item w3-button w3-hover-blue" href="index.html">Home</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="using_db.html">Search database</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="http://archiver.rootsweb.ancestry.com/cgi-bin/search?aop&path=GEN-OBIT">Search archives</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="http://lists.rootsweb.ancestry.com/index/other/Obituaries/GEN-OBIT.html">Email list</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="volunteer.html">Volunteer</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="publications.html">Publications</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="adoptables.html">Adoptable Publications</a>
+</div>
+	
+<div id="smNav" class="w3-hide w3-hide-large w3-hide-medium"> <!-- container for small screen navbar -->
+	<div class="w3-bar-block w3-left-align w3-large w3-theme">
+		
+		<div class="w3-bar-item w3-dropdown-hover">Search
+			<div class="w3-dropdown-content w3-white w3-card-4">
+				<a class="w3-bar-item w3-button" href="using_db.html">Database</a>
+				<a class="w3-bar-item w3-button" href="http://archiver.rootsweb.ancestry.com/cgi-bin/search?aop&path=GEN-OBIT">Archives</a>
+			</div>
+		</div>
+		<a class="w3-bar-item w3-button" href="http://lists.rootsweb.ancestry.com/index/other/Obituaries/GEN-OBIT.html">Subscribe</a>
+		<a class="w3-bar-item w3-button" href="volunteer.html">Volunteer</a>
+		<a class="w3-bar-item w3-button" href="publications.html">Publications</a>
+		<a class="w3-bar-item w3-button" href="adoptables.html">Adoptables</a>
+	</div>
+</div> <!-- end of small navbar -->
+
+<div class="w3-container">
+	<h1 class="w3-center">Obituary Filer Downloads</h1>
+	<h4 class="w3-center">Use the appropriate button to download the correct version of Obituary Filer for your computer.</h4>
+	<div class="w3-center">
+		<div class="w3-bar w3-margin-top">
+		<a href="http://www.rootsweb.ancestry.com/~obituary/ObituaryFiler212ins.exe" class="w3-button w3-teal w3-hover-blue w3-round-xxlarge w3-margin">Obituary Filer for Windows</a>
+		<a href="http://www.rootsweb.ancestry.com/~obituary/ObituaryFiler2-1.3.dmg" class="w3-button w3-teal w3-hover-blue w3-round-xxlarge w3-margin">Obituary Filer for Mac OS</a>
+	</div>
+	<div class="w3-center w3-margin-bottom">
+		<a href="http://www.rootsweb.ancestry.com/~obituary/release_notes_obitfiler2.html" class="w3-button w3-white w3-hover-teal w3-border w3-border-teal w3-round-xxlarge">Release notes</a>
+	</div>
+
+</div>
+
+<noscript>Your browser does not support JavaScript!</noscript>
+<footer class="w3-container w3-theme">
+  <p class="w3-small"><b>Thank You</b> to Rootsweb for hosting our website and our mailing list since 2006.</p>
+  <p class="w3-tiny">
+<script>document.write("Last modified " + document.lastModified)</script></p>
+</footer>
+
+</body>
+</html>

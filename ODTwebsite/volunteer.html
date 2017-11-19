@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/odt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+<script src="scripts/email.js"></script>
+<script src="scripts/odt.js"></script>
+
+<title>Volunteer</title>
+</head>
+
+<body>
+<!-- Site page header, first small, then medium, then large -->
+<div class="w3-hide-medium w3-hide-large">
+	<img src="logo_small.png" alt="Obituary Daily Times logo" style="width:100%">
+</div>
+<div class="w3-hide-small w3-hide-large" >	
+	<img src="banner_med.png" alt="Obituary Daily Times banner" style="width:100%">
+</div>
+<div class="w3-hide-small w3-hide-medium" >	
+	<img src="banner_lg.png" alt="Obituary Daily Times banner" style="width:100%">
+</div>
+
+<!-- navigation bar; need to include odt.js -->
+<div class="w3-bar w3-theme w3-right-align">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-theme w3-opennav w3-right" href="javascript:void(0);" onclick="flipShow()"><span class="fa fa-bars fa-2x"></span></a> 
+	<a class="w3-bar-item w3-button w3-hover-blue" href="index.html">Home</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="using_db.html">Search database</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="http://archiver.rootsweb.ancestry.com/cgi-bin/search?aop&path=GEN-OBIT">Search archives</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="http://lists.rootsweb.ancestry.com/index/other/Obituaries/GEN-OBIT.html">Email list</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="volunteer.html">Volunteer</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="publications.html">Publications</a>
+	<a class="w3-bar-item w3-button w3-hover-blue w3-hide-small" href="adoptables.html">Adoptable Publications</a>
+</div>
+	
+<div id="smNav" class="w3-hide w3-hide-large w3-hide-medium"> <!-- container for small screen navbar -->
+	<div class="w3-bar-block w3-left-align w3-large w3-theme">
+		
+		<div class="w3-bar-item w3-dropdown-hover">Search
+			<div class="w3-dropdown-content w3-white w3-card-4">
+				<a class="w3-bar-item w3-button" href="using_db.html">Database</a>
+				<a class="w3-bar-item w3-button" href="http://archiver.rootsweb.ancestry.com/cgi-bin/search?aop&path=GEN-OBIT">Archives</a>
+			</div>
+		</div>
+		<a class="w3-bar-item w3-button" href="http://lists.rootsweb.ancestry.com/index/other/Obituaries/GEN-OBIT.html">Subscribe</a>
+		<a class="w3-bar-item w3-button" href="volunteer.html">Volunteer</a>
+		<a class="w3-bar-item w3-button" href="publications.html">Publications</a>
+		<a class="w3-bar-item w3-button" href="adoptables.html">Adoptables</a>
+	</div>
+</div> <!-- end of small navbar -->
+
+<noscript>Your browser does not support JavaScript!</noscript>
+
+<div class="w3-panel w3-center w3-teal">
+	<h2>Become a Volunteer</h2>
+</div>
+<div class="w3-container">
+	<div class="w3-container">
+		<p>Interested in genealogy? Have a computer? Willing to spend a little 
+		time each day sending in basic obituary info from your area? 
+		It's easy, interesting and helps other researchers.</p> 
+		<p>We supply a simple form to use for submissions from your computer and email. 
+		We provide the training; all you need to give is your time.</p>
+		<p>As a volunteer contributor, you will have two basic tasks:</p>
+		<p class="w3-margin-left">1. Submit indexes of the obituaries from your local publication(s).</p>
+		<p class="w3-margin-left">2. Respond to queries from other contributors for copies of those obituaries.</p>
+
+		<p>To start indexing obituaries, contact our training moderator, 
+		<script>mailteal("odtmoderator","gtmc",2,"","Jan Plambeck")</script>.</p>
+		<p>For more information, read our <a class="w3-text-theme" href="http://www.rootsweb.ancestry.com/~obituary/manual/obitfiler_help.html">Volunteer Handbook.</a></p>
+		<p>We have a <a class="w3-text-theme" href="http://www.rootsweb.ancestry.com/~obituary/ODTContributorsHandbook2016.pdf">Printable Handbook</a> too.</p>
+	</div>
+</div>
+
+<footer class="w3-container w3-theme">
+  <p class="w3-small"><b>Thank You</b> to Rootsweb for hosting our website and our mailing list since 2006.</p>
+  <p class="w3-tiny">
+<script>document.write("Last modified " + document.lastModified)</script></p>
+</footer>
+
+</body>
+</html>
